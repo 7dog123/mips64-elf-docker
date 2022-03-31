@@ -3,7 +3,7 @@
 # Stage 1 - Build the toolchain
 FROM ubuntu:20.04
 
-ARG N64_INST=usr/local
+ARG N64_INST=/usr/local
 ENV N64_INST=${N64_INST}
 
 # install dependencies
