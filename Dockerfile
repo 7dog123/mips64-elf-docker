@@ -11,7 +11,8 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive TZ=US/Central \
     apt-get install -yq --no-install-recommends wget bzip2 \
     build-essential apt-utils autoconf automake zlib1g-dev \
-    bison flex texinfo file ca-certificates libelf-dev
+    bison flex texinfo file ca-certificates libelf-dev \
+    libmpfr-dev libmpc-dev
 RUN apt-get clean
 
 # Build
